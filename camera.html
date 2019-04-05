@@ -24,7 +24,7 @@
             var camera
             function initCamera() {
                 camera = new THREE.PerspectiveCamera(45, window.innerWidth, window.innerHeight, 1, 10000);
-                camera.position.x = 1 
+                camera.position.z = 1 
             }
 
             var scene
@@ -55,6 +55,7 @@
                 var line = new THREE.Line( geometry, material, THREE.LineSegments );
                 scene.add(line);
             }
+
 
             function threeStart () {
                 initThree();
